@@ -13,7 +13,7 @@ framework_path="${app_bundle_path}/${framework_name}.framework"
 if [ ! -w "$wechat_path" ]
 then
 echo -e "\n\n为了将小助手写入微信, 请输入密码 ： "
-sudo chown -R $(whoami) "$wechat_path"
+chown -R $(whoami) "$wechat_path"
 fi
 
 # 备份 WeChat 原始可执行文件
